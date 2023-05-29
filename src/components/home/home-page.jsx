@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import styles from "../home/home.module.scss";
-import ElasticCarousel from "../../../Elatic/elastic";
+// import ElasticCarousel from "../../../Elatic/elastic";
+import ElasticCarousel from "../../../Elatic/Elastic";
 import Partners from "../../../Elatic/partners";
 
 export const HomePage = ({ data }) => (

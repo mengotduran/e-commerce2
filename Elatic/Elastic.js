@@ -1,4 +1,5 @@
-import { items } from "../public/Items.json";
+// import { items } from "../public/Items.json";
+import {items} from '../src/components/json/items.json';
 import Carousel from "react-elastic-carousel";
 import styles from "../styles/Elastic.module.scss";
 import React, { useRef } from "react";
