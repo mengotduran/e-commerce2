@@ -248,8 +248,9 @@ export const Header = () => {
                           borderRadius: 0, // radii.xs
                           background: "white", // colors.pink800
                           color: "grey",
-                          height: "$12",
-                          margin: "0px",
+                          height: "40px",
+                          fontSize: "1rem",
+                          textTransform: "uppercase",
                           "&:hover": {
                             background: "#eef075",
                           },
