@@ -50,11 +50,14 @@ export const HomePage = ({ data }) => (
                 />
                 <div class="carousel-caption">
                   <div className={styles.carousel_text}>
-                    <p>
-                      EXPERIENCE THE ONE, HOLISTIC MEDICINE DIFFERENT AND
-                      EFFECTIVE THERAPEUTIC APPROACH FOR GLOBAL HEALTH: BODY,
-                      SOUL AND SPIRIT
-                    </p>
+                    <div className={styles.quote_div}>
+                      <FaQuoteLeft className={styles.carousel_quote}/>
+                      <p>
+                        EXPERIENCE THE ONE, HOLISTIC MEDICINE DIFFERENT AND
+                        EFFECTIVE THERAPEUTIC APPROACH FOR GLOBAL HEALTH: BODY,
+                        SOUL AND SPIRIT.
+                      </p>
+                    </div>
                     <div className={styles.btn_div}>
                       <button>Book an Appointment</button>
                       <button>Visit Our Shop</button>
@@ -82,7 +85,7 @@ export const HomePage = ({ data }) => (
                         EXPERIENCE THE ONE, <span>HOLISTIC MEDICINE</span>{" "}
                         DIFFERENT AND
                         <span> EFFECTIVE THERAPEUTIC</span> APPROACH FOR GLOBAL
-                        HEALTH: BODY, SOUL AND SPIRIT
+                        HEALTH: BODY, SOUL AND SPIRIT.
                       </p>
                     </div>
                     <div className={styles.btn_div}>
@@ -151,7 +154,7 @@ export const HomePage = ({ data }) => (
               fermentum a auctor maecenas. Volutpat eu nulla enim volutpat enim
               bibendum pellentesque tellus faucibus.
             </p>
-            <button>Button</button>
+            <button>READ MORE</button>
           </div>
         </div>
       </section>
@@ -175,7 +178,7 @@ export const HomePage = ({ data }) => (
                 />
                 <div className={styles.therapy_text}>
                   <p key={ev.id}>{ev.description}</p>
-                  <button key={ev.id}>Button</button>
+                  <button key={ev.id}>SERVICES</button>
                 </div>
               </div>
             ))}
@@ -235,7 +238,7 @@ export const HomePage = ({ data }) => (
               proin risus quis libero nascetur ullamcorper. Gravida magna nunc
               eu sed enim dolor.
             </p>
-            <button>voir plus</button>
+            <button>SEE MORE</button>
           </div>
           <div className={styles.arrivals_img}>
             <div
@@ -268,7 +271,7 @@ export const HomePage = ({ data }) => (
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                   <Image
-                    src="/images/img 13.jpg"
+                    src="/images/img 17.jpg"
                     className={styles.arrival_img}
                     width={700}
                     height={500}
@@ -286,7 +289,7 @@ export const HomePage = ({ data }) => (
                 </div>
                 <div class="carousel-item">
                   <Image
-                    src="/images/img 14.jpg"
+                    src="/images/img 16.jpg"
                     width={700}
                     height={500}
                     className={styles.arrival_img}
@@ -326,7 +329,7 @@ export const HomePage = ({ data }) => (
       <section className={styles.general}>
         <div className={styles.terminology}>
           <div className={styles.general_text}>
-            <h2>TÉMOIGNAGES</h2>
+            <h2>TESTIMONIALS</h2>
             <div className={styles.general_div}></div>
           </div>
           <div>
@@ -353,15 +356,15 @@ export const HomePage = ({ data }) => (
           <div className={styles.display_text}>
             <div>
               <h2>22</h2>
-              <p>CIH Medical Center</p>
+              <p>AGENCY</p>
             </div>
             <div>
               <h2>30</h2>
-              <p>Jason Bourne</p>
+              <p>PATIENCE</p>
             </div>
             <div>
               <h2>20</h2>
-              <p>John Doe</p>
+              <p>SPECIALIST</p>
             </div>
           </div>
         </div>

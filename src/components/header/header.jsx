@@ -98,7 +98,7 @@ export const Header = () => {
                           },
                         }}
                       >
-                        A Propos
+                        REGARDS
                       </Dropdown.Button>
                       <Dropdown.Menu aria-label="Static Actions">
                         <Dropdown.Item
@@ -107,15 +107,13 @@ export const Header = () => {
                             height: "60px",
                           }}
                         >
-                          presentation de holistic hopital
+                          PRESENTATION OF HOLISTIC HOSPITAL
                         </Dropdown.Item>
                         <Dropdown.Item key="copy">
-                          medecine holistique
+                          HOLISTIC MEDICINE
                         </Dropdown.Item>
-                        <Dropdown.Item key="edit">
-                          les Spécialiste
-                        </Dropdown.Item>
-                        <Dropdown.Item key="agency">nos agences</Dropdown.Item>
+                        <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
+                        <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown>
@@ -133,37 +131,78 @@ export const Header = () => {
                           },
                         }}
                       >
-                        Nos Therapie
+                        OUR THERAPIES
                       </Dropdown.Button>
-                      <Dropdown.Menu aria-label="Static Actions">
+                      <Dropdown.Menu
+                        aria-label="Static Actions"
+                        css={{
+                          display: "grid",
+                          textTransform: "uppercase",
+                          fontSize: "10px",
+                        }}
+                      >
                         <Dropdown.Item
                           key="new"
                           css={{
                             height: "60px",
                           }}
                         >
-                          presentation de holistic hopital
+                          GENERAL ACUPUNCTURE, AURICULAR And CRANIAL
                         </Dropdown.Item>
-                        <Dropdown.Item key="copy">
-                          medecine holistique
+                        <Dropdown.Item
+                          key="copy"
+                          css={{
+                            height: "80px",
+                          }}
+                        >
+                          LASER THERAPY, TERAHETZ AND INFRARED
                         </Dropdown.Item>
-                        <Dropdown.Item key="edit">
-                          les Spécialiste
+                        <Dropdown.Item
+                          key="edit"
+                          css={{
+                            height: "50px",
+                          }}
+                        >
+                          THERAPIES BY VENTOS
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          key="editt"
+                          css={{
+                            height: "40px",
+                          }}
+                        >
+                          REFLEXOLOGY PLANTER
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          key="edits"
+                          css={{
+                            height: "40px",
+                          }}
+                        >
+                          MASSAGE THERAPUTIC
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          key="edite"
+                          css={{
+                            height: "40px",
+                          }}
+                        >
+                          MEDICINE ANTI-AGING
                         </Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </div>
                   <Link href="#" className="nav_link_text">
-                    pathologie
+                    PATHOLOGY
                   </Link>
                   <Link href="#" className="nav_link_text">
-                    Galerie
+                    GALERY
                   </Link>
                   <Link href="#" className="nav_link_text">
-                    Actualites
+                    NEWS
                   </Link>
                   <Link href="#" className="nav_link_text">
-                    contact
+                    CONTACT
                   </Link>
                 </div>
               </div>
@@ -203,6 +242,40 @@ export const Header = () => {
               Home
             </Link>
             <div className="drop_down_div">
+            <Dropdown>
+                      <Dropdown.Button
+                        css={{
+                          borderRadius: 0, // radii.xs
+                          background: "white", // colors.pink800
+                          color: "grey",
+                          height: "$12",
+                          margin: "0px",
+                          "&:hover": {
+                            background: "#eef075",
+                          },
+                          "&:active": {
+                            background: "$pink200",
+                          },
+                        }}
+                      >
+                        REGARDS
+                      </Dropdown.Button>
+                      <Dropdown.Menu aria-label="Static Actions">
+                        <Dropdown.Item
+                          key="new"
+                          css={{
+                            height: "60px",
+                          }}
+                        >
+                          PRESENTATION OF HOLISTIC HOSPITAL
+                        </Dropdown.Item>
+                        <Dropdown.Item key="copy">
+                          HOLISTIC MEDICINE
+                        </Dropdown.Item>
+                        <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
+                        <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
               <Dropdown>
                 <Dropdown.Button
                   css={{
@@ -220,93 +293,69 @@ export const Header = () => {
                     },
                   }}
                 >
-                  A Propos
+                  OUR THERAPY
                 </Dropdown.Button>
                 <Dropdown.Menu aria-label="Static Actions">
                   <Dropdown.Item
                     key="new"
                     css={{
-                      height: "60px",
-                      fontSize: "1rem",
+                      height: "80px",
                       textTransform: "uppercase",
                     }}
                   >
-                    presentation de holistic hopital
+                    PRESENTATION OF HOLISTIC HOSPITAL
                   </Dropdown.Item>
                   <Dropdown.Item
                     key="copy"
                     css={{
-                      textTransform: "uppercase",
+                      height: "80px",
                     }}
                   >
-                    medecine holistique
+                    LASER THERAPY, TERAHETZ AND INFRARED
                   </Dropdown.Item>
                   <Dropdown.Item
                     key="edit"
                     css={{
-                      textTransform: "uppercase",
+                      height: "50px",
                     }}
                   >
-                    les Spécialiste
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown>
-                <Dropdown.Button
-                  css={{
-                    borderRadius: 0, // radii.xs
-                    background: "white", // colors.pink800
-                    color: "grey",
-                    height: "40px",
-                    fontSize: "1rem",
-                    textTransform: "uppercase",
-                    "&:hover": {
-                      background: "#eef075",
-                    },
-                    "&:active": {
-                      background: "$pink200",
-                    },
-                  }}
-                >
-                  Nos Therapie
-                </Dropdown.Button>
-                <Dropdown.Menu aria-label="Static Actions">
-                  <Dropdown.Item
-                    key="new"
-                    css={{
-                      height: "60px",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    presentation de holistic hopital
+                    THERAPIES BY VENTOS
                   </Dropdown.Item>
                   <Dropdown.Item
-                    key="copy"
+                    key="editt"
                     css={{
-                      textTransform: "uppercase",
+                      height: "40px",
                     }}
                   >
-                    medecine holistique
+                    REFLEXOLOGY PLANTER
                   </Dropdown.Item>
                   <Dropdown.Item
-                    key="edit"
+                    key="edits"
                     css={{
-                      textTransform: "uppercase",
+                      height: "40px",
                     }}
                   >
-                    les Spécialiste
+                    MASSAGE THERAPUTIC
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    key="edite"
+                    css={{
+                      height: "40px",
+                    }}
+                  >
+                    MEDICINE ANTI-AGING
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
             <Link href="#" className="nav_link_text">
-              pathologie
+              PATHALOGY
             </Link>
             <Link href="#" className="nav_link_text">
-              Galerie
+              GALERY
             </Link>
             <Link href="#" className="nav_link_text">
-              Actualites
+              NEWS
             </Link>
             <Link href="#" className="nav_link_text">
               contact
