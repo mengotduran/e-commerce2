@@ -246,7 +246,7 @@ $gray: #444343;
           padding: 4px 30px;
           color: $bg;
           font-weight: 600;
-          width: 130px;  
+          width: 160px;  
           margin: 0px 0px 20px 0px;
           // border: 2px solid red;
         }
@@ -269,7 +269,7 @@ $gray: #444343;
 .charge {
   @media (max-width: 450px) {
     .general_text {
-      padding-top: 40px;
+      padding-top: 40px; 
     }
   }
 }

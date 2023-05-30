@@ -43,7 +43,7 @@ export const HomePage = ({ data }) => (
                   className={styles.carousel_img}
                   alt="..."
                   style={{
-                    height: "500px",
+                    height: "535px",
                     objectFit: "cover",
                     objectPosition: "15% 10%",
                   }}
@@ -59,8 +59,8 @@ export const HomePage = ({ data }) => (
                       </p>
                     </div>
                     <div className={styles.btn_div}>
-                      <button>Book an Appointment</button>
-                      <button>Visit Our Shop</button>
+                      <button>BOOK AN APPOINTMENT</button>
+                      <button>VISIT OUT SHOP</button>
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export const HomePage = ({ data }) => (
                   className={styles.carousel_img}
                   alt="..."
                   style={{
-                    height: "500px",
+                    height: "535px",
                     objectFit: "cover",
                     objectPosition: "15% 10%",
                   }}
@@ -89,8 +89,8 @@ export const HomePage = ({ data }) => (
                       </p>
                     </div>
                     <div className={styles.btn_div}>
-                      <button>Book an Appointment</button>
-                      <button>Visit Our Shop</button>
+                      <button>BOOK AN APPOINTMENT</button>
+                      <button>VISIT OUR SHOP</button>
                     </div>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ export const HomePage = ({ data }) => (
                 />
                 <div className={styles.therapy_text}>
                   <p key={ev.id}>{ev.description}</p>
-                  <button key={ev.id}>SERVICES</button>
+                  <button key={ev.id}>READ MORE</button>
                 </div>
               </div>
             ))}
@@ -238,7 +238,7 @@ export const HomePage = ({ data }) => (
               proin risus quis libero nascetur ullamcorper. Gravida magna nunc
               eu sed enim dolor.
             </p>
-            <button>SEE MORE</button>
+            <button>VISIT OUR SHOP</button>
           </div>
           <div className={styles.arrivals_img}>
             <div
@@ -271,7 +271,7 @@ export const HomePage = ({ data }) => (
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                   <Image
-                    src="/images/img 17.jpg"
+                    src="/images/img 18.webp"
                     className={styles.arrival_img}
                     width={700}
                     height={500}
@@ -289,7 +289,7 @@ export const HomePage = ({ data }) => (
                 </div>
                 <div class="carousel-item">
                   <Image
-                    src="/images/img 16.jpg"
+                    src="/images/img 19.jpg"
                     width={700}
                     height={500}
                     className={styles.arrival_img}
@@ -360,11 +360,11 @@ export const HomePage = ({ data }) => (
             </div>
             <div>
               <h2>30</h2>
-              <p>PATIENCE</p>
+              <p>PATIENTS</p>
             </div>
             <div>
               <h2>20</h2>
-              <p>SPECIALIST</p>
+              <p>SPECIALISTS</p>
             </div>
           </div>
         </div>
