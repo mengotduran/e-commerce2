@@ -22,14 +22,43 @@ $gray: #444343;
 
 body,
 html {
-  background: #fff;
+  background: $bg;
 }
 
 // DROPDOWN STYLES
 .drop_down_div {
-  display: flex; 
+  display: flex;
 }
 
+// CAROUSEL STYLING
+.rec-dot_active {
+  background-color: $lime !important;
+  box-shadow: 0 0 1px 3px $lime !important;
+}
+.rec-dot:focus,
+.rec-dot:hover {
+  box-shadow: 0 0 1px 3px $lime !important;
+}
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+  background-color: $lime !important;
+  box-shadow: 0 0 1px 3px $lime !important;
+}
+
+.rec-arrow {
+  background-color: lightgrey !important;
+  transition: all 0.3s ease;
+  font-size: 1.1rem !important;
+  color: white !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  min-width: 2rem !important;
+  line-height: 1.7rem !important;
+}
+
+.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+}
 
 // NAVBAR STYLES
 .nav_links,
@@ -107,15 +136,15 @@ html {
 }
 
 .res_nav_links {
-  display:flex;
+  display: flex;
   flex-direction: column;
   gap: 30px;
   text-transform: uppercase;
   font-size: 3rem;
-  .nav_link_text {  
+  .nav_link_text {
     color: $gray;
   }
-  @media(max-width:500px) {
+  @media (max-width: 500px) {
     font-size: 1rem;
     font-weight: 700;
     display: flex;
@@ -127,7 +156,7 @@ html {
 
 .drop_down_div {
   display: flex;
-  @media(max-width:900px){
+  @media (max-width: 900px) {
     display: flex;
     gap: 15px;
   }
@@ -153,7 +182,7 @@ button {
   outline: none;
   height: 30px;
   position: relative;
-  width: 30px; 
+  width: 30px;
   z-index: 1000;
   @media (max-width: 900px) {
     display: block;
@@ -204,7 +233,7 @@ button {
 
 .drop_down {
   background: $bg;
-  border-radius: 0px;  
+  border-radius: 0px;
 }
 
 // SIDEBAR STYLES
@@ -213,7 +242,7 @@ button {
   margin-top: 15%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;   
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 0;
@@ -236,23 +265,11 @@ button {
 }
 
 // SIDEBAR STYLES
-.sidebar-open { 
+.sidebar-open {
   width: 100vw;
   left: 0;
   background: $bg;
 }
-
-// .link_title-lan_type {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   width: 100vw;
-//   padding: 0 100px;
-//   background: $bg;
-//   @media (max-width: 450px) {
-//     padding: 0 20px;
-//   }
-// }
 
 .slider_menu,
 .slider_lan {
@@ -273,7 +290,7 @@ button {
 }
 
 // .link_titles {
-//   width: 60%;   
+//   width: 60%;
 // }
 
 // Header styles
@@ -397,12 +414,12 @@ button {
 
 .second-header {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   padding: 10px 6em;
-  @media(max-width:450px) {
+  @media (max-width: 450px) {
     padding: 5px 2em;
     align-items: center;
-  }  
+  }
 }
 
 .last-SH button {
@@ -472,10 +489,8 @@ footer {
         text-transform: uppercase;
         font-weight: 700;
         color: $gray;
-        padding: 4px 2px;
-        @media (max-width: 450px) {
-          width: 100px;
-        }
+        padding: 4px 0px;
+        width: 100px;
       }
     }
 
@@ -523,3 +538,135 @@ footer {
 .contacts span {
   word-spacing: 1px;
 }
+
+// PRESENTATION STYLES
+
+// GENERAL STYLES FOR DROPDOWN
+.general_dropdown {
+  padding: 80px 6em 20px;
+  @media (max-width: 450px) {
+    padding: 0px;
+  }
+}
+
+.general_text {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 450px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 700;
+    @media (max-width: 450px) {
+      font-size: 1.2em;
+    }
+  }
+  .general_div {
+    background: $green;
+    width: 70px;
+    height: 5px;
+  }
+}
+
+// PRESENTATION STYLES
+.presentation_div {
+  width: 100%;
+  .carousel_text {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 450px) {
+      width: 360px;
+      left: 3%;
+      top: 10%;
+      margin-bottom: 50px;
+      gap: 70px;
+    }
+    p {
+      font-size: 2rem;
+      text-align: center;
+      color: $bg;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgb(17, 17, 17);
+      position: relative;
+      @media (max-width: 900px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 450px) {
+        font-size: 1.3rem;
+      }
+      span {
+        color: $lime;
+      }
+    }
+    .quote_div {
+      display: flex;
+      .carousel_quote {
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        color: $bg;
+        font-size: 1.5em;
+        position: absolute;
+        top: -2%;
+        left: -2.5%;
+        @media (max-width: 900px) {
+          left: -5%;
+        }
+        @media (max-width: 450px) {
+          left: -1%;
+          top: -2%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .btn_div {
+      display: flex;
+      gap: 10px;
+      button {
+        padding: 5px 20px;
+        background: $lime;
+        border: none;
+        width: 180px;
+        font-weight: 700;
+        color: $gray;
+        @media (max-width: 450px) {
+          padding: 5px 10px;
+          width: 150px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// HISTORY TEXT
+.general_dropdown {
+  @media(max-width:500px) {
+    margin: 50px 0 30px;
+  }
+}
+.drop_history_text {
+  margin-top: 30px;  
+  display: grid;
+  gap: 20px;
+  @media(max-width:500px) {
+    margin-top: 15px;
+    padding: 0 30px;
+    .last_text {
+      display: none;
+    }
+  }
+}
+
+

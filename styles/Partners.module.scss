@@ -9,10 +9,20 @@ $gray: #444343;
 
 .partners{
     // padding: 80px 6em 20px;
+    // border: 2px solid red;
     padding: 0px 6em 0px;
     background: $bg;
     @media (max-width: 450px) {
       padding: 0;
+      // width: 80%;
+    }
+  }
+
+  .carousel_box {
+    // border: 2px solid red;
+    @media(max-width:450px) {
+      width: 80%;
+      margin: 0 auto;
     }
   }
 

@@ -1,6 +1,7 @@
 import Head from "next/head";
 // import styles from "../src/components/home/home.module.css";
 import { HomePage } from "../src/components/home/home-page.jsx";
+import Link from "next/link.js";
 
 export default function Home({data}) {
   return (

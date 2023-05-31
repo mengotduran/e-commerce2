@@ -5,7 +5,6 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { ImWhatsapp } from "react-icons/im";
 import { IoSearch } from "react-icons/io5";
 import React, { useState, useEffect } from "react";
-// import DropdownMenu from "../Elatic/Dropdown";
 import { Dropdown } from "@nextui-org/react";
 
 export const Header = () => {
@@ -78,7 +77,7 @@ export const Header = () => {
             <div className="last-SH">
               <div className="navbar-container">
                 <div className="nav_links">
-                  <Link href="#" className="nav_link_text">
+                  <Link href="/" className="nav_link_text">
                     Home
                   </Link>
                   <div className="drop_down_div">
@@ -107,7 +106,7 @@ export const Header = () => {
                             height: "60px",
                           }}
                         >
-                          PRESENTATION OF HOLISTIC HOSPITAL
+                          <Link href="/dropdown/presentation">PRESENTATION OF HOLISTIC HOSPITAL</Link>
                         </Dropdown.Item>
                         <Dropdown.Item key="copy">
                           HOLISTIC MEDICINE
@@ -238,7 +237,7 @@ export const Header = () => {
       >
         <div>
           <div className="res_nav_links">
-            <Link href="#" className="nav_link_text">
+            <Link href="/" className="nav_link_text">
               Home
             </Link>
             <div className="drop_down_div">
@@ -268,7 +267,7 @@ export const Header = () => {
                             height: "60px",
                           }}
                         >
-                          PRESENTATION OF HOLISTIC HOSPITAL
+                          <Link href="/dropdown/presentation">PRESENTATION OF HOLISTIC HOSPITAL</Link>
                         </Dropdown.Item>
                         <Dropdown.Item key="copy">
                           HOLISTIC MEDICINE

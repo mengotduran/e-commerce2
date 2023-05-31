@@ -35,18 +35,13 @@ export const HomePage = ({ data }) => (
             <div class="carousel-inner">
               <div
                 class="carousel-item active"
-                style={{ position: "relative" }}
+                style={{ position: "relative"}}
               >
                 <img
-                  src="images/img 5.jpg"
+                  src="/images/img 5.jpg"
                   // class="d-block w-100"
                   className={styles.carousel_img}
                   alt="..."
-                  style={{
-                    height: "535px",
-                    objectFit: "cover",
-                    objectPosition: "15% 10%",
-                  }}
                 />
                 <div class="carousel-caption">
                   <div className={styles.carousel_text}>
@@ -65,16 +60,20 @@ export const HomePage = ({ data }) => (
                   </div>
                 </div>
               </div>
-              <div class="carousel-item" style={{ position: "relative" }}>
+              <div
+                class="carousel-item active"
+                style={{ position: "relative"}}
+              >
                 <img
-                  src="images/img 3.jpg"
+                  src="/images/img 3.jpg"
                   // class="d-block w-100"
                   className={styles.carousel_img}
                   alt="..."
                   style={{
-                    height: "535px",
-                    objectFit: "cover",
-                    objectPosition: "15% 10%",
+                    // height: "535px",
+                    // width:"100%",
+                    // objectFit: "cover",
+                    // objectPosition: "15% 10%",
                   }}
                 />
                 <div class="carousel-caption normal" id="normal">

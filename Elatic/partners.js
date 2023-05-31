@@ -11,7 +11,7 @@ const breakPoints = [
     { width: 1200, itemsToShow: 3 },
 ];
 
-export default function Partners({data}) {
+export default function Partners() {
   const { elastic } = items;
   const carouselRef = useRef(null);
   let resetTimeout;
@@ -25,27 +25,27 @@ export default function Partners({data}) {
       </div>
 
       <div className={styles.partners}>
-        <Carousel breakPoints={breakPoints}
-            ref={carouselRef}
-            pagination={true}
-            enableAutoPlay={true}
-            showArrows={true}
-            autoPlaySpeed={4000}
-            isRTL={false}
-            onNextEnd={({ index }) => {
-              clearTimeout(resetTimeout);
-              resetTimeout = setTimeout(() => {
-                carouselRef?.current?.goTo(0);
-              }, 4000); // same time
-            }} className={styles.background}>
-          {items?.map((item) => (
-            <div className={styles.partners_residence}>
-              {/* <div>{item.name}</div> */}
-              <Image src={`/images/${item.imageUrl}`} width={200} height={150} alt="logo display"/>
-              {/* <img src={`/images/${item.imgUrl}`} alt="logo display"/> */}
-            </div>
-          ))}
-        </Carousel>
+        <div className={styles.carousel_box}>
+          <Carousel breakPoints={breakPoints}
+              ref={carouselRef}
+              pagination={true}
+              enableAutoPlay={true}
+              showArrows={true}
+              autoPlaySpeed={4000}
+              isRTL={false}
+              onNextEnd={({ index }) => {
+                clearTimeout(resetTimeout);
+                resetTimeout = setTimeout(() => {
+                  carouselRef?.current?.goTo(0);
+                }, 4000); // same time
+              }} className={styles.background} css={{color:"yellow"}}>
+            {items?.map((item) => (
+              <div className={styles.partners_residence}>
+                <Image src={`/images/${item.imageUrl}`} width={200} height={150} alt="logo display"/>
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </>
   );
