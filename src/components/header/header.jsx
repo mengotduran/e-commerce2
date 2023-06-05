@@ -18,12 +18,18 @@ export const Header = () => {
   };
 
   const handleSidebar = (status) => {
-    if (status) {
-      setIsSidebarOpen(true);
-    } else {
-      setIsSidebarOpen(false);
-    }
+    // if (status) {
+    //   setIsSidebarOpen(true);
+    // } else {
+    //   setIsSidebarOpen(false);
+    // }
+    setIsSidebarOpen(!isSidebarOpen)
   };
+
+  const hamburgerClick = () =>{
+    setIsSidebarOpen(false)
+    setIsActive(true)
+  }
 
   const handleClick = (event) => {
     setIsShown((current) => !current);
@@ -106,13 +112,21 @@ export const Header = () => {
                             height: "60px",
                           }}
                         >
-                          <Link href="/dropdown/presentation">PRESENTATION OF HOLISTIC HOSPITAL</Link>
+                          <Link href="/Regards/presentation">
+                            PRESENTATION OF HOLISTIC HOSPITAL
+                          </Link>
                         </Dropdown.Item>
                         <Dropdown.Item key="copy">
-                          HOLISTIC MEDICINE
+                          <Link href="/Regards/medicine">
+                            HOLISTIC MEDICINE
+                          </Link>
                         </Dropdown.Item>
-                        <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
-                        <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
+                        <Dropdown.Item key="edit">
+                          <Link href="/Regards/specialist">SPECIALIST</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item key="agency">
+                          <Link href="/Regards/therapy">OUR AGENCIES</Link>
+                        </Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown>
@@ -237,45 +251,45 @@ export const Header = () => {
       >
         <div>
           <div className="res_nav_links">
-            <Link href="/" className="nav_link_text">
+            <Link href="/" className="nav_link_text" onClick={hamburgerClick}>
               Home
             </Link>
             <div className="drop_down_div">
-            <Dropdown>
-                      <Dropdown.Button
-                        css={{
-                          borderRadius: 0, // radii.xs
-                          background: "white", // colors.pink800
-                          color: "grey",
-                          height: "40px",
-                          fontSize: "1rem",
-                          textTransform: "uppercase",
-                          "&:hover": {
-                            background: "#eef075",
-                          },
-                          "&:active": {
-                            background: "$pink200",
-                          },
-                        }}
-                      >
-                        REGARDS
-                      </Dropdown.Button>
-                      <Dropdown.Menu aria-label="Static Actions">
-                        <Dropdown.Item
-                          key="new"
-                          css={{
-                            height: "60px",
-                          }}
-                        >
-                          <Link href="/dropdown/presentation">PRESENTATION OF HOLISTIC HOSPITAL</Link>
-                        </Dropdown.Item>
-                        <Dropdown.Item key="copy">
-                          HOLISTIC MEDICINE
-                        </Dropdown.Item>
-                        <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
-                        <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+              <Dropdown>
+                <Dropdown.Button
+                  css={{
+                    borderRadius: 0, // radii.xs
+                    background: "white", // colors.pink800
+                    color: "grey",
+                    height: "40px",
+                    fontSize: "1rem",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      background: "#eef075",
+                    },
+                    "&:active": {
+                      background: "$pink200",
+                    },
+                  }}
+                >
+                  REGARDS
+                </Dropdown.Button>
+                <Dropdown.Menu aria-label="Static Actions">
+                  <Dropdown.Item
+                    key="new"
+                    css={{
+                      height: "60px",
+                    }}
+                  >
+                    <Link href="/Regards/presentation" onClick={hamburgerClick}>
+                      PRESENTATION OF HoLISTIC HOSPITAL
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item key="copy">HOLISTIC MEDICINE</Dropdown.Item>
+                  <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
+                  <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               <Dropdown>
                 <Dropdown.Button
                   css={{

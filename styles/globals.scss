@@ -1,10 +1,17 @@
+body {
+  // position:fixed;
+  // overflow-y:hidden;
+  // height: 100vh;
+  // border: 2px solid pink;
+}
+
 /*
 ===============
 Default styles
 ===============
 */
 * {
-  margin: 0;
+  margin: 0;  
   padding: 0;
   box-sizing: border-box;
 }
@@ -66,12 +73,10 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  // word-spacing: 20px;
   gap: 20px;
   .nav_link_text {
     font-size: 1rem;
     color: grey;
-    // text-decoration: none;
     word-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
@@ -238,7 +243,6 @@ button {
 
 // SIDEBAR STYLES
 .sidebar {
-  // border: 2px solid violet;
   margin-top: 15%;
   display: flex;
   align-items: flex-start;
@@ -269,6 +273,8 @@ button {
   width: 100vw;
   left: 0;
   background: $bg;
+  border: 2px solid red;
+  // position:static;
 }
 
 .slider_menu,
@@ -289,13 +295,8 @@ button {
   padding-left: 30px;
 }
 
-// .link_titles {
-//   width: 60%;
-// }
-
 // Header styles
 .main-header {
-  // background: $bg;
   .first-header {
     background: $green;
     display: flex;
@@ -390,7 +391,6 @@ button {
     display: flex;
     padding: 0;
     list-style-type: none;
-    // border: 2px solid red;
     gap: 17px;
     @media (max-width: 500px) {
       padding: 0;
@@ -423,8 +423,6 @@ button {
 }
 
 .last-SH button {
-  // border: 1px solid $lime;
-  // background: $lime;
   display: flex;
   align-items: center;
   padding: 5px 25px;
@@ -538,135 +536,4 @@ footer {
 .contacts span {
   word-spacing: 1px;
 }
-
-// PRESENTATION STYLES
-
-// GENERAL STYLES FOR DROPDOWN
-.general_dropdown {
-  padding: 80px 6em 20px;
-  @media (max-width: 450px) {
-    padding: 0px;
-  }
-}
-
-.general_text {
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 450px) {
-    width: 70%;
-    margin: 0 auto;
-  }
-  h2 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    font-weight: 700;
-    @media (max-width: 450px) {
-      font-size: 1.2em;
-    }
-  }
-  .general_div {
-    background: $green;
-    width: 70px;
-    height: 5px;
-  }
-}
-
-// PRESENTATION STYLES
-.presentation_div {
-  width: 100%;
-  .carousel_text {
-    width: 40%;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: 450px) {
-      width: 360px;
-      left: 3%;
-      top: 10%;
-      margin-bottom: 50px;
-      gap: 70px;
-    }
-    p {
-      font-size: 2rem;
-      text-align: center;
-      color: $bg;
-      font-weight: 700;
-      text-shadow: 1px 1px 2px rgb(17, 17, 17);
-      position: relative;
-      @media (max-width: 900px) {
-        font-size: 1.5rem;
-      }
-      @media (max-width: 450px) {
-        font-size: 1.3rem;
-      }
-      span {
-        color: $lime;
-      }
-    }
-    .quote_div {
-      display: flex;
-      .carousel_quote {
-        margin-right: 5px;
-        height: 50px;
-        width: 50px;
-        color: $bg;
-        font-size: 1.5em;
-        position: absolute;
-        top: -2%;
-        left: -2.5%;
-        @media (max-width: 900px) {
-          left: -5%;
-        }
-        @media (max-width: 450px) {
-          left: -1%;
-          top: -2%;
-          width: 30px;
-          height: 30px;
-        }
-      }
-    }
-
-    .btn_div {
-      display: flex;
-      gap: 10px;
-      button {
-        padding: 5px 20px;
-        background: $lime;
-        border: none;
-        width: 180px;
-        font-weight: 700;
-        color: $gray;
-        @media (max-width: 450px) {
-          padding: 5px 10px;
-          width: 150px;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-}
-
-// HISTORY TEXT
-.general_dropdown {
-  @media(max-width:500px) {
-    margin: 50px 0 30px;
-  }
-}
-.drop_history_text {
-  margin-top: 30px;  
-  display: grid;
-  gap: 20px;
-  @media(max-width:500px) {
-    margin-top: 15px;
-    padding: 0 30px;
-    .last_text {
-      display: none;
-    }
-  }
-}
-
 

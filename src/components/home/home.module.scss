@@ -4,7 +4,7 @@ Global Colors
 ===============
 */
 $orange: orange;
-$bg: #f0f0f0;
+$bg: #f0f0f0;  
 $green: #056a3e;
 $lime: #eef075;
 $gray: #444343;
@@ -166,7 +166,7 @@ $gray: #444343;
   padding: 80px 6em 20px;
   background: $bg;
   @media (max-width: 450px) {
-    padding: 0px;
+    padding: 0px;  
   }
 }
 
