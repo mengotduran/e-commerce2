@@ -285,9 +285,9 @@ export const Header = () => {
                       PRESENTATION OF HoLISTIC HOSPITAL
                     </Link>
                   </Dropdown.Item>
-                  <Dropdown.Item key="copy">HOLISTIC MEDICINE</Dropdown.Item>
-                  <Dropdown.Item key="edit">SPECIALIST</Dropdown.Item>
-                  <Dropdown.Item key="agency">OUR AGENCIES</Dropdown.Item>
+                  <Dropdown.Item key="copy"><Link href="/Regards/medicine" onClick={hamburgerClick}>HOLISTIC MEDICINE</Link></Dropdown.Item>
+                  <Dropdown.Item key="edit"><Link href="/Regards/specialist" onClick={hamburgerClick}>SPECIALIST</Link></Dropdown.Item>
+                  <Dropdown.Item key="agency"><Link href="/Regards/therapy" onClick={hamburgerClick}>OUR AGENCIES</Link></Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               <Dropdown>
